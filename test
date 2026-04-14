@@ -1,3 +1,161 @@
-azure-netapp-anf-proposal-html/
-├─ index.html
-└─ README.md
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Azure NetApp Files – FileからAIデータ基盤へ</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+    section {
+      min-height: 100vh;
+      padding: 80px 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    h1 {
+      font-size: 3.2em;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 2.2em;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      max-width: 900px;
+    }
+    .highlight {
+      color: #4fd1ff;
+      font-weight: 600;
+    }
+    .fadein {
+      animation: fadeInUp 1.5s ease-out forwards;
+      opacity: 0;
+    }
+    @keyframes fadeInUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to   { transform: translateY(0);  opacity: 1; }
+    }
+    .visual {
+      margin-top: 40px;
+      padding: 30px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .card {
+      padding: 24px;
+      background: linear-gradient(160deg, rgba(255,255,255,0.15), rgba(255,255,255,0.03));
+      border-radius: 12px;
+      font-size: 1.05em;
+    }
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 0.9em;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Slide 1 -->
+<section>
+  <h1 class="fadein">
+    ただの<span class="highlight">ファイル置き場</span>として<br>
+    Azure NetApp Filesを使っていませんか？
+  </h1>
+  <p class="fadein">
+    まずは手軽に。アプリは変えずに。<br>
+    <span class="highlight">だから選ばれるファイルサービス。</span>
+  </p>
+</section>
+
+<!-- Slide 2 -->
+<section>
+  <h2 class="fadein">しかし、それは入口にすぎません</h2>
+  <p class="fadein">
+    Azure NetApp Filesは単なるストレージではありません。<br>
+    <span class="highlight">30年以上磨き続けられたONTAP技術</span>と
+    Azureネイティブな制御が融合した
+    エンタープライズ・データ基盤です。
+  </p>
+  <div class="visual grid fadein">
+    <div class="card">極めて高い性能と低レイテンシ</div>
+    <div class="card">Snapshot / Cloneによる即時データ活用</div>
+    <div class="card">秒単位で変えられる性能と容量</div>
+    <div class="card">ミッションクリティカル前提の可用性</div>
+  </div>
+</section>
+
+<!-- Slide 3 -->
+<section>
+  <h2 class="fadein">
+    データは、動かす時代から<br>
+    <span class="highlight">その場で使う</span>時代へ
+  </h2>
+  <p class="fadein">
+    本当の課題はAIでも分析でもありません。<br>
+    <span class="highlight">
+      データを動かすこと自体が、最大のリスク
+    </span>
+    になっているのです。
+  </p>
+</section>
+
+<!-- Slide 4 -->
+<section>
+  <h2 class="fadein">Azure NetApp Files Object REST API</h2>
+  <p class="fadein">
+    Object REST APIは機能ではありません。<br>
+    <span class="highlight">
+      ファイル世界とAI世界をつなぐ橋
+    </span>です。
+  </p>
+  <div class="visual grid fadein">
+    <div class="card">Azure AI Search / Copilot</div>
+    <div class="card">Azure Databricks / Fabric</div>
+    <div class="card">Power BI / Spark / SQL</div>
+    <div class="card">セキュアなインプレースAI活用</div>
+  </div>
+</section>
+
+<!-- Slide 5 -->
+<section>
+  <h1 class="fadein">
+    Azure NetApp Filesは、<br>
+    <span class="highlight">
+      未来のAI価値を生み出す場所
+    </span>
+  </h1>
+  <p class="fadein">
+    ファイルから始めた、その選択は正しかった。<br>
+    Azure NetApp Filesは、<br>
+    <span class="highlight">
+      今日の安心と、明日のAIを同時に守る
+    </span>
+    データ基盤です。
+  </p>
+</section>
+
+<footer>
+  © NetApp × Microsoft | Azure NetApp Files
+</footer>
+
+</body>
+</html>
